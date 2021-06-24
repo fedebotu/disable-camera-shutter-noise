@@ -29,6 +29,10 @@ adb shell settings put system csc_pref_camera_forced_shuttersound_key 0
 6. Stop the ADB server and remove the phone safely
 7. Now the shutter sound will only depend on the phones volume! Thus, we can create a _routine_ which turns the volume temporarily off if the camera app is opened. For example, in Bixby Routines (Samsung) it will look like this:
 
+<p align="center">
+  <img src="https://github.com/Juju-botu/disable-camera-shutter-noise/blob/main/Screenshot_20210624-110856_Bixby%20Routines.jpg" width=350 alt="Bixby Routines">
+</p>
+
 8. If all the steps were done correctly, no nasty camera noise will be emitted by you phone. Enjoy 😎
 
 ### Note on software updates
@@ -37,3 +41,6 @@ In certain phones, software updates may reset the adb settings. Just re-apply th
 adb shell settings put system csc_pref_camera_forced_shuttersound_key 0
 ```
 or create a script / app for automatically doing so, and you will be ready to go!
+
+### Credits
+Special thanks to https://zaezin.tistory.com/496
