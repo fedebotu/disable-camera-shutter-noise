@@ -4,7 +4,7 @@ Tested on Samsung Galaxy S20 FE 5G and Samsung Galaxy Tab S6 (both Korean versio
 
 ## Guide
 
-  1.  Activate developer options: *Settings→ About phone → Software information —>* Click on "Build number" until the options are unlocked
+  1. Activate developer options: *Settings→ About phone → Software information —>* Click on "Build number" until the options are unlocked
   2. Activate usb debugging: *Settings → Developer options →USB debugging*
   3. Download and run ADB (Android Debug Bridge):
   
@@ -21,11 +21,16 @@ Tested on Samsung Galaxy S20 FE 5G and Samsung Galaxy Tab S6 (both Korean versio
   sudo apt-get install android-tools-adb android-tools-fastboot
   ```
     
-4. Start ADB and connect the phone: click on "allow USB debugging"
+4. Connect the phone: click on "allow USB debugging" (for Windows, go to the ADB installation folder folder, keep Shift pressed and right-clik, then open Powershell)
 5. Run the following command in a terminal:
-```bash
-adb shell settings put system csc_pref_camera_forced_shuttersound_key 0
-```
+  - Windows:
+  ```powershell
+  .\adb shell settings put system csc_pref_camera_forced_shuttersound_key 0
+  ```
+  - Mac / Linux:
+  ```bash
+  adb shell settings put system csc_pref_camera_forced_shuttersound_key 0
+  ```
 6. Stop the ADB server and remove the phone safely
 7. Now the shutter sound will only depend on the phones volume! Thus, we can create a _routine_ which turns the volume temporarily off if the camera app is opened. For example, in Bixby Routines (Samsung) it will look like this:
 
