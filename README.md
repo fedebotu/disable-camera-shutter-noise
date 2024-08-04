@@ -2,6 +2,8 @@
 How to disable camera shutter noise on Android with no root even for Korean and Japanese phones. 
 Tested on Samsung Galaxy S20 FE 5G and Samsung Galaxy Tab S6 (both Korean version) with Android 11.
 
+Update (2024.08.14): this is still working with the newest Samsung phones, such as the Samsung Galaxy S24 Ultra with Android 14. 
+
 ## Guide
 
   1. Activate developer options: *Settings→ About phone → Software information —>* Click on "Build number" until the options are unlocked
